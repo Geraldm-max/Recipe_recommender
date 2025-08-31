@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Enter Ingredients</h2>
+<form method="POST">
+  <div class="mb-3">
+    <input type="text" class="form-control" name="ingredients" placeholder="e.g. rice, beans, onion">
+  </div>
+  <button type="submit" class="btn btn-primary">Find Recipes</button>
+</form>
+{% endblock %}

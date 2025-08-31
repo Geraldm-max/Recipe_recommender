@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Add a New Recipe</h2>
+<form method="POST">
+  <div class="mb-3">
+    <label class="form-label">Recipe Name</label>
+    <input type="text" class="form-control" name="name" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Ingredients (comma separated)</label>
+    <textarea class="form-control" name="ingredients" rows="2" required></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">instructions</label>
+    <textarea class="form-control" name="instructions" rows="3" required></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Tags (e.g. Nutritious, Quick Meal, Budget Meal)</label>
+    <input type="text" class="form-control" name="tags">
+  </div>
+  <button type="submit" class="btn btn-success">Add Recipe</button>
+</form>
+{% endblock %}
